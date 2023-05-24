@@ -15,12 +15,12 @@ export const InfoArea = styled.div`
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
 
   .family-name {
     font-size: 10px;
     color: #202020;
+    flex: 1;
   }
 
   .separator {
