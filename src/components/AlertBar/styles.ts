@@ -13,6 +13,11 @@ export const Container = styled.div`
     font-size: 18px;
     line-height: 25px;
     color: #ffffff;
+    font-weight: 400;
+  }
+
+  .highlight {
+    font-weight: 700;
   }
 
   ${media.lessThan("medium")`

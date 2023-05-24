@@ -2,7 +2,7 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const Wrapper = styled.div`
-  padding: 40px 0px;
+  padding: 40px 20px;
 
   ${media.lessThan("medium")`
     padding: 20px;
@@ -17,6 +17,7 @@ export const Container = styled.div`
     margin-bottom: 14px;
     font-size: 24px;
     color: #202020;
+    font-weight: 600;
   }
 `;
 

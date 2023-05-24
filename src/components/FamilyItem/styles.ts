@@ -6,12 +6,18 @@ export const Container = styled.div`
 `;
 
 export const ImageArea = styled.div`
-  height: 198px;
+  padding: 8px;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const InfoArea = styled.div`
   padding: 8px;
   border-top: 1px solid #ccc;
+  height: 36px;
 
   display: flex;
   align-items: center;
@@ -20,6 +26,7 @@ export const InfoArea = styled.div`
   .family-name {
     font-size: 10px;
     color: #202020;
+    font-weight: 600;
     flex: 1;
   }
 

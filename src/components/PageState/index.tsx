@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import * as S from "./styles";
 
 type PageStateProps = {
@@ -8,6 +10,10 @@ type PageStateProps = {
 function PageState({ title, description }: PageStateProps) {
   return (
     <>
+      <Head>
+        <title>{title} | Blocks</title>
+      </Head>
+
       <S.Container>
         <h2 className="title">{title}</h2>
         {!!description && <p className="description">{description}</p>}
