@@ -16,9 +16,8 @@ export async function getStaticProps() {
     props: {
       trpcState: helpers.dehydrate(),
       skip: 0,
-      take: 25,
+      take: 28,
     },
-    revalidate: 60 * 60, // uma hora
   };
 }
 

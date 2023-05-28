@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100vh;
-  padding: 0px 20px;
+  padding: 80px 20px;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   .title {

@@ -1,22 +1,24 @@
-import Head from "next/head";
-
+import Loading from "../Loading";
 import * as S from "./styles";
 
 type PageStateProps = {
   title: string;
   description?: string;
+  isLoading?: boolean;
 };
 
-function PageState({ title, description }: PageStateProps) {
+function PageState({ title, description, isLoading }: PageStateProps) {
   return (
     <>
-      <Head>
-        <title>{title} | Blocks</title>
-      </Head>
-
       <S.Container>
-        <h2 className="title">{title}</h2>
-        {!!description && <p className="description">{description}</p>}
+        <div />
+
+        <div>
+          <h2 className="title">{title}</h2>
+          {!!description && <p className="description">{description}</p>}
+        </div>
+
+        {isLoading && <Loading />}
       </S.Container>
     </>
   );

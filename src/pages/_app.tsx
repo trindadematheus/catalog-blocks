@@ -15,6 +15,8 @@ function App({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
+
+        <title>Catálogo - Blocks</title>
       </Head>
 
       <Component {...pageProps} />

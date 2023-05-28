@@ -26,3 +26,11 @@ export const FamiliesArea = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
   grid-gap: 17px;
 `;
+
+export const Center = styled.div`
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
