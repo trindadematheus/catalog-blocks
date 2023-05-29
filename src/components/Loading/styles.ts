@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+type ContainerProps = {
+  color: string;
+};
+
+export const Container = styled.div<ContainerProps>`
   display: inline;
 
   .plane {
     width: 2em;
     height: 2em;
-    background-color: #222;
+    background-color: ${(props) => props.color};
     transform: rotate(0);
     animation: flip 1s infinite;
   }

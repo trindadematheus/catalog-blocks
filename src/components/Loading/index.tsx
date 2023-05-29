@@ -1,9 +1,13 @@
 import * as S from "./styles";
 
-function Loading() {
+type LoadingProps = {
+  color?: string;
+};
+
+function Loading({ color }: LoadingProps) {
   return (
     <>
-      <S.Container>
+      <S.Container color={color || "#222"}>
         <div className="plane" />
       </S.Container>
     </>
