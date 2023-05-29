@@ -4,7 +4,7 @@ function AlertBar() {
   return (
     <>
       <S.Container>
-        <p className="text" >
+        <p className="text">
           Não limite sua criatividade, junte-se a familia Blocks por apenas{" "}
           <b className="highlight" >BRL 19,99</b>
         </p>
